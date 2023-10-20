@@ -1,4 +1,6 @@
-<?php if(isset($_SESSION["username"])): ?>
+<?php
+session_start();
+if(isset($_SESSION["username"])): ?>
     <div class="row">
         <div class="col-md-12">
             <a href="/sign-out" class="btn btn-danger">Déconnexion</a>

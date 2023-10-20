@@ -18,7 +18,6 @@ class RoutingController
     }
     public function handleRequest(): void
     {
-        session_start();
         // Get the requested URL path
         $url = $_SERVER['REQUEST_URI'];
 
